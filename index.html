@@ -2,16 +2,19 @@
 <html>
 <head>
     <title>NEX Radio en Vivo</title>
+    <meta charset="UTF-8">
 </head>
-<body style="text-align: center; font-family: sans-serif; background: #121212; color: white;">
+<body style="text-align: center; font-family: Arial, sans-serif; background: #121212; color: white; padding-top: 50px;">
     <h1>NEX Radio</h1>
-    <p>Transmitiendo en vivo para ti</p>
+    <p>LA EMISORA QUE SINTONIZA TUS SENTIDOS</p>
     
-    <audio controls autoplay style="width: 80%; max-width: 500px;">
+    <audio id="radioPlayer" controls style="width: 80%; max-width: 500px; margin-top: 20px;">
         <source src="https://06a76b128814f1ee-190-103-29-80.serveousercontent.com/live" type="audio/mpeg">
-        Tu navegador no soporta audio.
+        Tu navegador no soporta el reproductor.
     </audio>
-    
-    <p>Si no suena, dale al botón de Play!</p>
+
+    <div style="margin-top: 20px;">
+        <p style="font-size: 0.8em; color: #888;">Si no suena, pulsa el botón de Play arriba.</p>
+    </div>
 </body>
 </html>
