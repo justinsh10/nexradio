@@ -2,44 +2,45 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>NEX Radio | En Vivo</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            /* Fondo actualizado */
             background-image: url('nexradio2.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            font-family: Arial, sans-serif;
+            background-attachment: fixed;
+            font-family: sans-serif;
             color: white;
         }
 
         .container {
             text-align: center;
-            background: rgba(0, 0, 0, 0.6); 
-            padding: 30px;
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.7); 
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(8px);
+            width: 85%;
+            max-width: 400px;
         }
 
         img.logo {
-            max-width: 250px;
-            margin-bottom: 20px;
+            width: 100%;
+            max-width: 200px;
+            margin-bottom: 15px;
         }
 
         audio {
             width: 100%;
-            max-width: 350px;
-            margin-top: 20px;
+            margin-top: 15px;
         }
     </style>
 </head>
@@ -48,14 +49,16 @@
     <div class="container">
         <img src="logo.png" alt="NEX Radio" class="logo">
         
-        <h2>EN VIVO</h2>
+        <h2 style="margin: 5px 0;">EN VIVO</h2>
+        <h3 style="margin: 5px 0; font-weight: normal;">NEX Radio</h3>
+        <p style="margin: 5px 0; font-size: 14px; font-style: italic;">La emisora que SINTONIZA tus SENTIDOS</p>
         
         <audio controls autoplay>
-            <source src="https://uni-solo-bacon-commodities.trycloudflare.com/live" type="audio/mpeg">
-            Tu navegador no soporta el reproductor de audio.
+            <source src="TU_LINK_DE_STREAMING_AQUI" type="audio/mpeg">
         </audio>
+
+        <div style="margin-top: 15px; font-size: 24px;">🇻🇪</div>
     </div>
 
 </body>
-</html>
 </html>
