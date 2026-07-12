@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     
     <style>
-        /* Estilos para el fondo y el centrado total */
+        /* Estilos para el fondo y centrado */
         body { 
             margin: 0;
             padding: 0;
@@ -16,23 +16,37 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: #121212; 
+            /* Usamos tu imagen de fondo "nexradio2.jpg" */
+            background-image: url('nexradio2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             color: white;
             font-family: Arial, sans-serif;
         }
+        /* Contenedor semitransparente para que resalte el texto */
         .container { 
             text-align: center;
             width: 90%;
             max-width: 500px;
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
+            padding: 20px;
+            border-radius: 15px;
         }
         .logo { 
-            width: 250px; 
+            width: 200px; /* Tamaño ajustado del logo */
             height: auto; 
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+        }
+        h2, h3, p {
+            margin: 5px 0;
         }
         audio {
             width: 100%;
-            margin-top: 20px;
+            margin-top: 15px;
+            /* Filtro para que el reproductor se vea oscuro y encaje */
+            filter: invert(90%) hue-rotate(180deg); 
         }
     </style>
 </head>
@@ -41,9 +55,9 @@
     <div class="container">
         <img src="logo.png" alt="NEX Radio" class="logo">
 
-        <h2 style="margin: 5px 0;">EN VIVO</h2>
-        <h3 style="margin: 5px 0; font-weight: normal;">NEX Radio</h3>
-        <p style="margin: 5px 0; font-size: 14px; font-style: italic;">La emisora que SINTONIZA tus SENTIDOS</p>
+        <h2>EN VIVO</h2>
+        <h3>NEX Radio</h3>
+        <p><em>La emisora que SINTONIZA tus SENTIDOS</em></p>
 
         <audio controls autoplay>
             <source src="https://uni-solo-bacon-commodities.trycloudflare.com/live" type="audio/mpeg">
